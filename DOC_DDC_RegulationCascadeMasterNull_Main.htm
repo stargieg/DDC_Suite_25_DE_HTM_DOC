@@ -1,0 +1,314 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>Überschrift @&amp;name@</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Arial;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DE-CH>
+
+<div class=Section1>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>Führungsregler
+Nullenergieband @@&amp;name@@</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Führungsregler für eine Kaskaden-Sequenzregelung mit Nulllenergieband,
+zum Einsatz z.B. als Ablufttemperatur-Führungsregler. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Der Regler ist auf die Funktion „@@&amp;ref@@“ zu referenzieren,
+da diese alle nötigen Informationen zum Zustand der Anlage hat (z.B. Frei
+Kühlung, Entfeuchtung aktiv etc.)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Nullenergieband bedeutet hier das nicht genau auf einen
+Sollwert von z.B. 21,0 °C geregelt wird. In solch einem Fall ist z.B. immer ein
+Erhitzer oder ein Kühler aktiv.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Dieser Regler arbeitet mit einem Temperaturbereich, z.B.
+20,0 bis 24,0 °C. Wird dieser Temperaturbereich erreicht wird keine weitere
+Energie mehr verwendet um auf einen exakten Wert auszuregeln. Diese spart
+Energie und somit Kosten.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Ist der Istwert innerhalb des Toleranzbandes werden die
+Sollwerte Heizen/Kühlen der Folgeregler soweit angehoben bzw. abgesenkt bis der
+minimal benötigte Energieaufwand erreicht wird um den Grenzbereich des
+Toleranzbandes zu erreichen.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Die Sollwerte der Führungsgrösse sind wie folgt zu
+verstehen:</p>
+
+<p class=MsoNormal>- Sollwert Kühlen: Bis auf diesen Wert soll gekühlt werden
+unter Zuhilfenahme der Sequenzregler wie z.B. Kühler</p>
+
+<p class=MsoNormal>- Sollwert Heizen: Bis auf diesen Wert soll geheizt werden
+unter Zuhilfenahme der Sequenzregler wie z.B. Erhitzer</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Die Sollwerte der Folgegrösse sind wie folgt zu verstehen:</p>
+
+<p class=MsoNormal>- Sollwert Kühlen: anzuschliessen an die Geräte die aktiv
+kühlen können</p>
+
+<p class=MsoNormal>- Sollwert Heizen: anzuschliessen an die Geräte die aktiv
+heizen können</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Geräte die ohne Energieaufwand arbeiten wie z.B. WRG oder
+Mischluft können auf den Mittelwert des Sollwertes der Folgegrösse
+angeschlossen werden.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Damit erreicht man auch ein Totband zwischen den
+Sequenzreglern was sich zusätzlich positiv auf den Energieaufwand
+auswirkt.&nbsp;</p>
+
+<p class=MsoNormal>Der Sollwert der Führungsgröße kann von einer
+Sollwertfunktion (z.B. Raumsollwert) kommen oder als Konstantsollwert
+parametriert werden.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Liegt keine Freigabe der Regelung vor wird der Sollwert der
+Folgegröße mit dem Sollwert der Führungsgröße initialisiert. Nach Freigabe der
+Regelung arbeitet der Führungsregler von diesem Punkt aus.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Ist der Auskühlschutz aktiv, wird der maximale Folgesollwert
+ausgeben, bei aktivem Überhitzungsschutz wird der minimale Folgesollwert
+ausgeben.</p>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:14.4pt;border-collapse:collapse'>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Parameter</b></p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border:solid windowtext 1.0pt;
+  border-left:none;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Wert</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Einheit Regelgrösse</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>°C</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Einheit Folgegrösse</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>°C</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Sollwertvorwahl (0=Konstant, 1=Sollwertfunktion)</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_SollwertWahl.0p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Sollwert Regelgrösse&nbsp;Heizen (wenn Konstant)</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_SollwertHeizen.1p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Sollwert Regelgrösse&nbsp;Kühlen (wenn Konstant)</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_SollwertKuehlen.1p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Proportionalband</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_P_Band.1p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Nachstellzeit</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>@adj_I_Zeit.1p@
+  s</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Differentialzeit</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>@adj_D_Anteil.1p@
+  s</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Totband</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>@adj_Totzone.1p@</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB>Abtastzeit des Reglers</span></p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-GB>@adj_Abtasten.1p@
+  s</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Sollwert Folgegrösse (0=Auto, 1=Hand)</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_YWahl.0p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Sollwert Folgegrösse Heizen bei Handeingriff</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_YHandHeizen.1p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Sollwert Folgegrösse Kühlen bei Handeingriff </p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_YHandKuehlen.1p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Auswahl Min.-Maxwert Folgegrösse(0=Konstant, 1=Sollwertfunktion)</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_MinMaxWahl.0p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Minimalwert Folgegrösse</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_YMin.1p@</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=436 valign=top style='width:327.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Minimalwert Folgegrösse</p>
+  </td>
+  <td width=177 valign=top style='width:133.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>@adj_YMax.1p@</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
